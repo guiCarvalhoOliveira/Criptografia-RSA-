@@ -1,20 +1,39 @@
 Qual é a definição de criptografia assimétrica, como o RSA? | É um sistema que utiliza um par de chaves diferentes: uma chave pública para criptografar e uma chave privada para descriptografar.
+
 Quem são os três criadores do algoritmo de criptografia RSA, cujas iniciais formam o nome do sistema? | R.L. Rivest, A. Shamir e L. Adleman.
+
 Qual é o problema matemático fundamental que garante a segurança do RSA? | A dificuldade computacional de fatorar números inteiros grandes em seus fatores primos.
+
 No contexto da criptografia RSA, o que compõe a chave pública? | O par de inteiros (n,e), onde n é o módulo e e é o expoente de codificação.
+
 No contexto da criptografia RSA, o que compõe a chave privada? | O par de inteiros (n,d), onde n é o módulo e d é o expoente de decodificação.
+
 Qual é o primeiro passo na geração de chaves para o algoritmo RSA? | Escolher dois números primos distintos e grandes, denotados por p e q.
+
 Após escolher os primos p e q no RSA, como o módulo n é calculado? | O módulo n é calculado como o produto dos dois primos: n=p⋅q.
+
 Qual é a fórmula para calcular a Função Totiente de Euler, ϕ(n), quando n=p⋅q e p,q são primos? | A fórmula é ϕ(n)=(p−1)(q−1).
+
 Que condição o expoente público e deve satisfazer em relação a ϕ(n)? | O expoente e deve ser coprimo com ϕ(n), ou seja, mdc(e,ϕ(n))=1.
+
 Como o expoente privado d é determinado no algoritmo RSA? | O expoente d é o inverso modular de e em relação a ϕ(n), satisfazendo a congruência e⋅d≡1(modϕ(n)).
+
 Qual é a fórmula matemática para criptografar uma mensagem M usando a chave pública (n,e) no RSA? | O texto cifrado C é calculado como C≡M^e(mod n).
+
 Qual é a fórmula matemática para descriptografar um texto cifrado C usando a chave privada (n,d) no RSA? | A mensagem original M é recuperada como M≡C ^d(mod n).
-O _____ é um conjunto de instruções que auxilia na conclusão de objetivos em um tempo finito. | algoritmo
+
+O _____ é um conjunto de instruções que auxilia na conclusão de objetivos em um tempo finito. | algoritmo.
+
 De acordo com o Algoritmo da Divisão Euclidiana, para quaisquer inteiros positivos a e b, existem únicos inteiros q e r tais que... | a=b⋅q+r, onde 0≤r<b.
+
 No Algoritmo da Divisão Euclidiana (a=bq+r), como são chamados os termos a,b,q e r? | a é o dividendo, b é o divisor, q é o quociente e r é o resto.
+
 O que significa a notação a∣b em teoria dos números? | Significa que 'a divide b', ou seja, existe um inteiro t tal que b=a⋅t.
+
 Qual é a finalidade do Algoritmo Euclidiano? | Facilitar o cálculo do máximo divisor comum (mdc) entre dois números inteiros.
+
 Dois números inteiros a e b são ditos _____ se mdc(a,b)=1 | primos entre si (ou coprimos)
+
 No processo do Algoritmo de Euclides, o mdc de dois números é o... | último resto diferente de zero obtido na sequência de divisões sucessivas.
+
 O que afirma o Teorema Fundamental da Aritmética? | Todo inteiro positivo n>1 pode ser escrito de modo único como um produto de potências de números primos.
